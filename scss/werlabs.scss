@@ -1,0 +1,56 @@
+// Colours //
+// peach: #FF7865
+// pineGreen: #0F5441
+// oceanBlue: #204C63
+// burgundy: #6D475A
+// yellow: #FFD779
+// gray: #7a7a7a
+
+
+// Fonts //
+@font-face{
+    font-family:"Proxima N W01";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/proxima-nova-regular.woff2") format("woff2"),
+    url("fonts/proxima-nova-regular.woff") format("woff");
+}
+@font-face{
+    font-family:"Proxima N W01";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/proxima-nova-bold.woff2") format("woff2"),
+    url("fonts/proxima-nova-bold.woff") format("woff");
+}
+@font-face{
+    font-family:"Proxima N W01";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/proxima-nova-extrabold.woff2") format("woff2"),
+    url("fonts/proxima-nova-extrabold.woff") format("woff");
+}
+
+// Assignment Styles //
+
+header .w-container div {
+    display: flex;
+    justify-content: space-between;
+
+    nav ul {
+        margin-top: 0;
+
+        li {
+            list-style-type: none;
+            float: left;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .js-nav-toggle {
+        display: none;
+    }
+}

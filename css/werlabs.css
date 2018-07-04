@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/proxima-nova-regular.woff2") format("woff2"), url("fonts/proxima-nova-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/proxima-nova-bold.woff2") format("woff2"), url("fonts/proxima-nova-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/proxima-nova-extrabold.woff2") format("woff2"), url("fonts/proxima-nova-extrabold.woff") format("woff"); }
+
+header .w-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  header .w-container div nav ul {
+    margin-top: 0; }
+    header .w-container div nav ul li {
+      list-style-type: none;
+      float: left; }
+      header .w-container div nav ul li a {
+        text-decoration: none; }
+  header .w-container div .js-nav-toggle {
+    display: none; }
+
+/*# sourceMappingURL=werlabs.css.map */

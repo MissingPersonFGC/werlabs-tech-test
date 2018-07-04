@@ -1,0 +1,16 @@
+{
+  "name": "werlabs-frontend-assignment",
+  "version": "0.1.0",
+  "description": "Frontend Developer Assignment",
+  "author": "peter.svegrup@werlabs.com",
+  "license": "WTFPL",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.5"
+  }
+}
