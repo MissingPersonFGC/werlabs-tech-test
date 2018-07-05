@@ -39,6 +39,7 @@ gulp.task("browser-sync", () => {
 // Watch
 gulp.task('watch', function() {
     gulp.watch(['scss/werlabs.scss'], ['scss']);
+    gulp.watch("*.html", reload);
 });
 
 // Default
