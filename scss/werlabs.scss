@@ -30,27 +30,90 @@
     url("fonts/proxima-nova-extrabold.woff") format("woff");
 }
 
+// Variables
+$peach: #ff7865;
+$pineGreen: #0f5441;
+$oceanBlue: #204c63;
+$burgundy: #6d475a;
+$yellow: #ffd779;
+$gray: #7a7a7a;
+
+// Mixins
+
+@mixin fontAssignment($fontWeight, $fontSize) {
+    font-family: "Proxima N W01";
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
+
 // Assignment Styles //
 
-header .w-container div {
-    display: flex;
-    justify-content: space-between;
+@import 'setup';
 
-    nav ul {
-        margin-top: 0;
+body {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
-        li {
-            list-style-type: none;
-            float: left;
+header {
+    padding-top: 20px;
 
-            a {
-                text-decoration: none;
+    .w-container div {
+        display: flex;
+        justify-content: space-between;
+    
+        nav ul {
+            margin-top: 0;
+    
+            li {
+                list-style-type: none;
+                float: left;
+                @include fontAssignment(400, 16px);
+                margin-right: 15px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: $gray;
+                }
             }
+        }
+    
+        .js-nav-toggle {
+            display: none;
+        }
+    }
+}
+
+main {
+    margin-top: 15px;
+
+    h1 {
+        @include fontAssignment(800, 65px);
+        color: $peach;
+
+        span {
+            display: block;
+            color: $pineGreen;
         }
     }
 
+    .hero-header {
+        background-image: url('../images/lp-start-hero-comp.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        padding-top: 90px;
+        padding-bottom: 90px;
 
-    .js-nav-toggle {
-        display: none;
+        p {
+            @include fontAssignment(400, 20px);
+            width: 450px;
+            color: #3d3d3c;
+        }
     }
 }
