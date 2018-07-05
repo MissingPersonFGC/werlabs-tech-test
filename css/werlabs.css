@@ -304,7 +304,8 @@ main {
       main .pricing .grid-container .box h3, main .pricing .grid-container .box p, main .pricing .grid-container .box ul li, main .pricing .grid-container .box .most-popular {
         text-align: left; }
       main .pricing .grid-container .box--header {
-        padding: 20px; }
+        padding: 20px;
+        margin-bottom: 40px; }
       main .pricing .grid-container .box ul {
         margin-top: 25px;
         margin-left: 10px; }
@@ -313,7 +314,7 @@ main {
           font-family: "Proxima N W01";
           font-weight: 400;
           font-size: 18px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
           padding-right: 20px;
           line-height: 1.5; }
           main .pricing .grid-container .box ul li a {
@@ -331,7 +332,8 @@ main {
       font-weight: 700;
       font-size: 18px;
       text-transform: uppercase;
-      width: 90%; }
+      width: 90%;
+      margin-top: 15px; }
       main .pricing .grid-container .box1 button + a {
         color: #6d475a;
         display: block;
@@ -339,7 +341,7 @@ main {
         font-weight: 700;
         font-size: 14px;
         text-transform: uppercase;
-        margin: 20px 0; }
+        margin: 20px 0 30px; }
     main .pricing .grid-container .box2--header {
       background: #204c63; }
     main .pricing .grid-container .box2 button {
@@ -354,7 +356,7 @@ main {
       font-size: 18px;
       text-transform: uppercase;
       width: 90%;
-      margin-top: 26px; }
+      margin-top: 41px; }
       main .pricing .grid-container .box2 button + a {
         color: #204c63;
         display: block;
@@ -377,7 +379,7 @@ main {
       font-size: 18px;
       text-transform: uppercase;
       width: 90%;
-      margin-top: 54px; }
+      margin-top: 69px; }
       main .pricing .grid-container .box3 button + a {
         color: #0f5441;
         display: block;
@@ -388,5 +390,25 @@ main {
         margin: 20px 0; }
     main .pricing .grid-container .box2--header, main .pricing .grid-container .box3--header {
       margin-top: 34px; }
+  main .lp-section {
+    text-align: center;
+    margin: 150px 0; }
+    main .lp-section img {
+      display: inline-block; }
+    main .lp-section--image {
+      margin-bottom: 20px; }
+    main .lp-section h3 {
+      font-family: "Proxima N W01";
+      font-weight: 700;
+      font-size: 34px;
+      color: #0f5441;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    main .lp-section p {
+      font-family: "Proxima N W01";
+      font-weight: 400;
+      font-size: 18px;
+      width: 250px;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=werlabs.css.map */

@@ -183,6 +183,7 @@ main {
 
             &--header {
                 padding: 20px;
+                margin-bottom: 40px;
             }
 
             ul {
@@ -192,7 +193,7 @@ main {
                 li {
                     list-style-image: url('../images/checkmark.png');
                     @include fontAssignment(400, 18px);
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                     padding-right: 20px;
                     line-height: 1.5;
     
@@ -219,13 +220,14 @@ main {
                 @include fontAssignment(700, 18px);
                 text-transform: uppercase;
                 width: 90%;
+                margin-top: 15px;
 
                 + a {
                     color: $burgundy;
                     display: block;
                     @include fontAssignment(700, 14px);
                     text-transform: uppercase;
-                    margin: 20px 0;
+                    margin: 20px 0 30px;
                 }
             }
         }
@@ -245,7 +247,7 @@ main {
                 @include fontAssignment(700, 18px);
                 text-transform: uppercase;
                 width: 90%;
-                margin-top: 26px;
+                margin-top: 41px;
 
                 + a {
                     color: $oceanBlue;
@@ -272,7 +274,7 @@ main {
                 @include fontAssignment(700, 18px);
                 text-transform: uppercase;
                 width: 90%;
-                margin-top: 54px;
+                margin-top: 69px;
 
                 + a {
                     color: $pineGreen;
@@ -288,6 +290,32 @@ main {
             &--header {
                 margin-top: 34px;
             }
+        }
+    }
+
+    .lp-section {
+        text-align: center;
+        margin: 150px 0;
+
+        img {
+            display: inline-block;
+        }
+
+        &--image {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            @include fontAssignment(700, 34px);
+            color: $pineGreen;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include fontAssignment(400, 18px);
+            width: 250px;
+            margin: 0 auto;
         }
     }
 }
