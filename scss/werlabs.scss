@@ -37,6 +37,7 @@ $oceanBlue: #204c63;
 $burgundy: #6d475a;
 $yellow: #ffd779;
 $gray: #7a7a7a;
+$black: #3d3d3c;
 
 // Mixins
 
@@ -109,11 +110,184 @@ main {
         background-position: right;
         padding-top: 90px;
         padding-bottom: 90px;
+        margin-bottom: 30px;
 
         p {
             @include fontAssignment(400, 20px);
             width: 450px;
-            color: #3d3d3c;
+            color: $black;
+        }
+    }
+
+    .most-popular {
+        @include fontAssignment(700, 12px);
+        text-transform: uppercase;
+        
+        span {
+            display: inline-block;
+            background: $yellow;
+            padding: 10px 15px;
+        }
+    }
+
+    .pricing {
+        background: url('../images/blood-tests-bg.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: bottom center;
+
+        .show-all {
+            margin-top: 40px;
+            text-align: center;
+
+            a {
+                display: inline-block;
+                margin-bottom: 40px;
+                text-decoration: none;
+                color: $peach;
+                padding-bottom: 7px;
+                @include fontAssignment(400, 18px);
+                border-bottom: 1px solid $peach;
+            }
+        }
+    }
+
+    .pricing .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+        .box {
+            background: white;
+            text-align: center;
+
+            p, a {
+                color: white;
+                text-decoration: none;
+            }
+
+            h3 {
+                margin: 0;
+                @include fontAssignment(400, 20px);
+            }
+
+            p {
+                @include fontAssignment(700, 30px);
+                margin: 0;
+                margin-top: 10px;
+            }
+            
+            h3, p, ul li, .most-popular {
+                text-align: left;
+            }
+
+            &--header {
+                padding: 20px;
+            }
+
+            ul {
+                margin-top: 25px;
+                margin-left: 10px;
+                
+                li {
+                    list-style-image: url('../images/checkmark.png');
+                    @include fontAssignment(400, 18px);
+                    margin-bottom: 10px;
+                    padding-right: 20px;
+                    line-height: 1.5;
+    
+                    a {
+                        color: $peach;
+                    }
+                }
+            } 
+            
+        }
+
+        .box1 {
+            &--header {
+                background: $burgundy;
+            }
+
+            button {
+                background: none;
+                border: 2px solid $burgundy;
+                border-radius: 30px;
+                color: $burgundy;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @include fontAssignment(700, 18px);
+                text-transform: uppercase;
+                width: 90%;
+
+                + a {
+                    color: $burgundy;
+                    display: block;
+                    @include fontAssignment(700, 14px);
+                    text-transform: uppercase;
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .box2 {
+            &--header {
+                background: $oceanBlue;
+            }
+
+            button {
+                background: none;
+                border: 2px solid $oceanBlue;
+                border-radius: 30px;
+                color: $oceanBlue;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @include fontAssignment(700, 18px);
+                text-transform: uppercase;
+                width: 90%;
+                margin-top: 26px;
+
+                + a {
+                    color: $oceanBlue;
+                    display: block;
+                    @include fontAssignment(700, 14px);
+                    text-transform: uppercase;
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .box3 {
+            &--header {
+                background: $pineGreen;
+            }
+
+            button {
+                background: none;
+                border: 2px solid $pineGreen;
+                border-radius: 30px;
+                color: $pineGreen;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @include fontAssignment(700, 18px);
+                text-transform: uppercase;
+                width: 90%;
+                margin-top: 54px;
+
+                + a {
+                    color: $pineGreen;
+                    display: block;
+                    @include fontAssignment(700, 14px);
+                    text-transform: uppercase;
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .box2, .box3 {
+            &--header {
+                margin-top: 34px;
+            }
         }
     }
 }

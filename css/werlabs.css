@@ -245,12 +245,148 @@ main {
     background-size: contain;
     background-position: right;
     padding-top: 90px;
-    padding-bottom: 90px; }
+    padding-bottom: 90px;
+    margin-bottom: 30px; }
     main .hero-header p {
       font-family: "Proxima N W01";
       font-weight: 400;
       font-size: 20px;
       width: 450px;
       color: #3d3d3c; }
+  main .most-popular {
+    font-family: "Proxima N W01";
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase; }
+    main .most-popular span {
+      display: inline-block;
+      background: #ffd779;
+      padding: 10px 15px; }
+  main .pricing {
+    background: url("../images/blood-tests-bg.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom center; }
+    main .pricing .show-all {
+      margin-top: 40px;
+      text-align: center; }
+      main .pricing .show-all a {
+        display: inline-block;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: #ff7865;
+        padding-bottom: 7px;
+        font-family: "Proxima N W01";
+        font-weight: 400;
+        font-size: 18px;
+        border-bottom: 1px solid #ff7865; }
+  main .pricing .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
+    main .pricing .grid-container .box {
+      background: white;
+      text-align: center; }
+      main .pricing .grid-container .box p, main .pricing .grid-container .box a {
+        color: white;
+        text-decoration: none; }
+      main .pricing .grid-container .box h3 {
+        margin: 0;
+        font-family: "Proxima N W01";
+        font-weight: 400;
+        font-size: 20px; }
+      main .pricing .grid-container .box p {
+        font-family: "Proxima N W01";
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0;
+        margin-top: 10px; }
+      main .pricing .grid-container .box h3, main .pricing .grid-container .box p, main .pricing .grid-container .box ul li, main .pricing .grid-container .box .most-popular {
+        text-align: left; }
+      main .pricing .grid-container .box--header {
+        padding: 20px; }
+      main .pricing .grid-container .box ul {
+        margin-top: 25px;
+        margin-left: 10px; }
+        main .pricing .grid-container .box ul li {
+          list-style-image: url("../images/checkmark.png");
+          font-family: "Proxima N W01";
+          font-weight: 400;
+          font-size: 18px;
+          margin-bottom: 10px;
+          padding-right: 20px;
+          line-height: 1.5; }
+          main .pricing .grid-container .box ul li a {
+            color: #ff7865; }
+    main .pricing .grid-container .box1--header {
+      background: #6d475a; }
+    main .pricing .grid-container .box1 button {
+      background: none;
+      border: 2px solid #6d475a;
+      border-radius: 30px;
+      color: #6d475a;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: "Proxima N W01";
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      width: 90%; }
+      main .pricing .grid-container .box1 button + a {
+        color: #6d475a;
+        display: block;
+        font-family: "Proxima N W01";
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 20px 0; }
+    main .pricing .grid-container .box2--header {
+      background: #204c63; }
+    main .pricing .grid-container .box2 button {
+      background: none;
+      border: 2px solid #204c63;
+      border-radius: 30px;
+      color: #204c63;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: "Proxima N W01";
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      width: 90%;
+      margin-top: 26px; }
+      main .pricing .grid-container .box2 button + a {
+        color: #204c63;
+        display: block;
+        font-family: "Proxima N W01";
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 20px 0; }
+    main .pricing .grid-container .box3--header {
+      background: #0f5441; }
+    main .pricing .grid-container .box3 button {
+      background: none;
+      border: 2px solid #0f5441;
+      border-radius: 30px;
+      color: #0f5441;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: "Proxima N W01";
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      width: 90%;
+      margin-top: 54px; }
+      main .pricing .grid-container .box3 button + a {
+        color: #0f5441;
+        display: block;
+        font-family: "Proxima N W01";
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 20px 0; }
+    main .pricing .grid-container .box2--header, main .pricing .grid-container .box3--header {
+      margin-top: 34px; }
 
 /*# sourceMappingURL=werlabs.css.map */
