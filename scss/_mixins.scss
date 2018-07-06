@@ -1,0 +1,5 @@
+@mixin fontAssignment($fontWeight, $fontSize) {
+    font-family: "Proxima N W01";
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
