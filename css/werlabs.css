@@ -261,7 +261,9 @@ main {
     main .most-popular span {
       display: inline-block;
       background: #ffd779;
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
   main .pricing {
     background: url("../images/blood-tests-bg.svg");
     background-repeat: no-repeat;
@@ -410,5 +412,79 @@ main {
       font-size: 18px;
       width: 250px;
       margin: 0 auto; }
+
+footer {
+  background: url("../images/footer-bg.svg");
+  background-size: cover;
+  background-position: bottom left; }
+  footer ul li {
+    list-style-type: none; }
+  footer .w-container .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 150px; }
+    footer .w-container .grid-container .social-media {
+      grid-column: 1 / span 1;
+      text-align: center; }
+      footer .w-container .grid-container .social-media > a {
+        display: inline-block;
+        color: #ff7865;
+        border: 2px solid #ff7865;
+        text-decoration: none;
+        padding: 15px 0;
+        text-transform: uppercase;
+        font-family: "Proxima N W01";
+        font-weight: 700;
+        font-size: 14px;
+        width: 275px;
+        text-align: center;
+        border-radius: 30px; }
+      footer .w-container .grid-container .social-media ul li {
+        float: left;
+        width: 45px;
+        margin-right: 20px;
+        margin-top: 25px; }
+        footer .w-container .grid-container .social-media ul li:first-of-type {
+          margin-left: 8px; }
+    footer .w-container .grid-container .social-media, footer .w-container .grid-container .nav1, footer .w-container .grid-container .nav2, footer .w-container .grid-container .nav3 {
+      grid-row: 1 / span 2; }
+    footer .w-container .grid-container .nav1, footer .w-container .grid-container .nav2, footer .w-container .grid-container .nav3 {
+      font-family: "Proxima N W01";
+      font-weight: 400;
+      font-size: 18px; }
+      footer .w-container .grid-container .nav1 a, footer .w-container .grid-container .nav2 a, footer .w-container .grid-container .nav3 a {
+        text-decoration: none;
+        color: #3d3d3c; }
+      footer .w-container .grid-container .nav1 ul, footer .w-container .grid-container .nav2 ul, footer .w-container .grid-container .nav3 ul {
+        margin: 0; }
+        footer .w-container .grid-container .nav1 ul li, footer .w-container .grid-container .nav2 ul li, footer .w-container .grid-container .nav3 ul li {
+          margin-bottom: 25px; }
+    footer .w-container .grid-container .nav1 {
+      grid-column: 2 / span 1; }
+    footer .w-container .grid-container .nav2 {
+      grid-column: 3 / span 1; }
+    footer .w-container .grid-container .nav3 {
+      grid-column: 4 / span 1; }
+    footer .w-container .grid-container .copyright {
+      grid-column: 5 / span 1;
+      grid-row: 2 / span 1;
+      text-align: center;
+      font-family: "Proxima N W01";
+      font-weight: 400;
+      font-size: 12px; }
+      footer .w-container .grid-container .copyright img {
+        margin-top: -50px;
+        width: 120px; }
+  footer .bottom-logo {
+    text-align: center;
+    font-family: "Proxima N W01";
+    font-weight: 400;
+    font-size: 18px;
+    color: #7a7a7a;
+    padding-bottom: 75px; }
+    footer .bottom-logo img {
+      width: 110px; }
 
 /*# sourceMappingURL=werlabs.css.map */

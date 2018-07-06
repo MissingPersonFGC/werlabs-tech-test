@@ -127,6 +127,8 @@ main {
             display: inline-block;
             background: $yellow;
             padding: 10px 15px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
         }
     }
 
@@ -316,6 +318,110 @@ main {
             @include fontAssignment(400, 18px);
             width: 250px;
             margin: 0 auto;
+        }
+    }
+}
+
+footer {
+    background: url('../images/footer-bg.svg');
+    background-size: cover;
+    background-position: bottom left;
+
+    ul li {
+        list-style-type: none;
+        
+    }
+
+    .w-container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5px;
+        margin-bottom: 150px;
+
+        .social-media {
+            grid-column: 1 / span 1;
+            text-align: center;
+
+            &> a {
+                display: inline-block;
+                color: $peach;
+                border: 2px solid $peach;
+                text-decoration: none;
+                padding: 15px 0;
+                text-transform: uppercase;
+                @include fontAssignment(700, 14px);
+                width: 275px;
+                text-align: center;
+                border-radius: 30px;
+            }
+
+            ul li {
+                float: left;
+                width: 45px;
+                margin-right: 20px;
+                margin-top: 25px;
+
+                &:first-of-type {
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .social-media, .nav1, .nav2, .nav3 {
+            grid-row: 1 / span 2;
+        }
+
+        .nav1, .nav2, .nav3 {
+            @include fontAssignment(400, 18px);
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+
+            ul {
+                margin: 0;
+
+                li {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        
+        .nav1 {
+            grid-column: 2 / span 1;
+        }
+
+        .nav2 {
+            grid-column: 3 / span 1;
+        }
+
+        .nav3 {
+            grid-column: 4 / span 1;
+        }
+
+        .copyright {
+            grid-column: 5 / span 1;
+            grid-row: 2 / span 1;
+            text-align: center;
+            @include fontAssignment(400, 12px);
+
+            img {
+                margin-top: -50px;
+                width: 120px;
+            }
+        }
+    }
+
+    .bottom-logo {
+        text-align: center;
+        @include fontAssignment(400, 18px);
+        color: $gray;
+        padding-bottom: 75px;
+
+        img {
+            width: 110px;
         }
     }
 }
