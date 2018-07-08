@@ -517,6 +517,9 @@ footer {
     background-size: contain;
     padding-top: 0;
     padding-bottom: 800px; }
+  main .pricing {
+    background-position: top;
+    background-size: cover; }
   main .pricing .grid-container {
     grid-template-columns: 1fr; }
     main .pricing .grid-container .box2 button, main .pricing .grid-container .box3 button {
