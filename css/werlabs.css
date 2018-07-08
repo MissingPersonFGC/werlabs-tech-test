@@ -239,6 +239,17 @@ main {
     main h1 span {
       display: block;
       color: #0f5441; }
+  main .slick-list {
+    line-height: 1.5;
+    padding-bottom: 40px; }
+  main .slick-dots li button::before {
+    color: #ffd1cb;
+    font-size: 10px; }
+  main .slick-dots li.slick-active button::before {
+    color: #ff7865;
+    border: 1px solid #ff7865;
+    border-radius: 50%;
+    background-clip: content-box; }
   main .hero-header {
     background-image: url("../images/lp-start-hero-comp.jpg");
     background-repeat: no-repeat;
@@ -417,6 +428,8 @@ footer {
   background: url("../images/footer-bg.svg");
   background-size: cover;
   background-position: bottom left; }
+  footer .mobile-social {
+    display: none; }
   footer ul li {
     list-style-type: none; }
   footer .w-container .grid-container {
@@ -486,5 +499,72 @@ footer {
     padding-bottom: 75px; }
     footer .bottom-logo img {
       width: 110px; }
+
+@media (max-width: 767px) {
+  header {
+    padding-top: 10px;
+    border-bottom: 1px solid #3d3d3c;
+    padding-bottom: 10px; }
+    header .w-container div .js-nav-toggle {
+      display: block;
+      padding-top: 5px; }
+  nav {
+    display: none; }
+  main .hero-header {
+    background: url("../images/lp-start-hero-small-comp.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 0;
+    padding-bottom: 800px; }
+  main .pricing .grid-container {
+    grid-template-columns: 1fr; }
+    main .pricing .grid-container .box2 button, main .pricing .grid-container .box3 button {
+      margin-top: 15px; }
+  footer {
+    background: none; }
+    footer .desktop-social {
+      display: none; }
+    footer .w-container .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto); }
+      footer .w-container .grid-container .social-media, footer .w-container .grid-container .nav1, footer .w-container .grid-container .nav2, footer .w-container .grid-container .nav3, footer .w-container .grid-container .copyright {
+        grid-column: 1 / span 1;
+        text-align: center;
+        margin-left: -45px; }
+      footer .w-container .grid-container .social-media {
+        grid-row: 1 / span 1; }
+        footer .w-container .grid-container .social-media > a {
+          margin-left: 35px; }
+      footer .w-container .grid-container .nav1, footer .w-container .grid-container .nav2, footer .w-container .grid-container .nav3, footer .w-container .grid-container .copyright {
+        margin-top: 40px; }
+      footer .w-container .grid-container .nav1 {
+        grid-row: 2 / span 1; }
+      footer .w-container .grid-container .nav2 {
+        grid-row: 3 / span 1; }
+      footer .w-container .grid-container .nav3 {
+        grid-row: 4 / span 1; }
+      footer .w-container .grid-container .copyright {
+        grid-row: 5 / span 1;
+        margin-left: 10px;
+        font-family: "Proxima N W01";
+        font-weight: 400;
+        font-size: 15px; }
+        footer .w-container .grid-container .copyright img {
+          margin-top: 0;
+          margin-left: -10px; }
+        footer .w-container .grid-container .copyright .mobile-social {
+          display: block; }
+          footer .w-container .grid-container .copyright .mobile-social li {
+            float: left;
+            width: 45px;
+            margin-right: 20px;
+            margin-top: 30px; }
+            footer .w-container .grid-container .copyright .mobile-social li img {
+              width: 45px;
+              margin-left: 0; }
+            footer .w-container .grid-container .copyright .mobile-social li:first-of-type {
+              margin-left: 225px; } }
 
 /*# sourceMappingURL=werlabs.css.map */
